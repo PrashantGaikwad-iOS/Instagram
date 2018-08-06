@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    @IBAction func shareOnInsta(_ sender: Any) {
+        InstagramManager.sharedManager.postImageToInstagramWithCaption(imageInstagram:UIImage(named:"fish.png")!, instagramCaption: "Posting image to instagram", view: self.view)
 
+    }
+    
 }
 
